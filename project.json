@@ -1,0 +1,101 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : true,
+    "frameRate" : 60,
+    "noCache" : true,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d","extensions","external"],
+
+    "jsList" : [
+        "src/common/THHttp.js",
+        "src/common/THAlertLayer.js",
+        "src/common/THConfirmLayer.js",
+        "src/common/THPopupLayer.js",
+        "src/common/WebSocketManager.js",
+
+        "src/resource.js",
+        "src/config/GameConfig.js",
+        "src/common/MessageCode.js",
+        "src/login/LoginScene.js",
+        "src/login/LoginLayer.js",
+        "src/lobby/BaseLayer.js",
+        "src/lobby/CountDownLabel.js",
+        "src/lobby/GameButton.js",
+        "src/lobby/LobbyScene.js",
+        "src/lobby/LobbyLayer.js",
+        "src/lobby/ChatLayer.js",
+        "src/lobby/NoticeLayer.js",
+        "src/lobby/DetailLayer.js",
+        "src/lobby/RoomLayer.js",
+
+        "src/login/LoginBaseLayer.js",
+        "src/login/MobileLoginLayer.js",
+        "src/login/EmailLoginLayer.js",
+        "src/login/RegisteredLayer.js",
+        "src/login/MobileRegisteredLayer.js",
+        "src/login/EmailRegisteredLayer.js",
+        "src/login/MobileGetCodeLayer.js",
+        "src/login/EmailGetCodeLayer.js",
+        "src/login/ChangePasswordLayer.js",
+        "src/login/ChangePasswordNameLayer.js",
+
+
+        "src/games/GameScene.js",
+        "src/games/TrackLayer.js",
+        "src/games/HeadLayer.js",
+        "src/games/SlotLayer.js",
+        "src/games/CarSprite.js",
+        "src/games/CDBetSprite.js",
+        "src/games/CDFengpanSprite.js",
+        "src/games/CDStartSprite.js",
+        "src/games/CancelBetButton.js",
+        "src/games/DiceAnimateLayer.js",
+
+
+        "src/games/BettingButton.js",
+        "src/games/ChipSprite.js",
+        "src/games/ChipButton.js",
+        "src/games/GameBaseLayer.js",
+        "src/games/PaiJiuLayer.js",
+        "src/games/NiuNiuLayer.js",
+        "src/games/SSCLongHuLayer.js",
+        "src/games/DanZhangLayer.js",
+        "src/games/LongHuLayer.js",
+        "src/games/SanGongLayer.js",
+        "src/games/BetListLayer.js",
+        "src/games/OnlineUsersListLayer.js",
+        "src/games/SettlementLayer.js",
+        "src/games/BettingDetailLayer.js",
+        "src/games/OnVillageLayer.js",
+        "src/games/TimerSelectLayer.js",
+        "src/games/BankerListLayer.js",
+        "src/games/ExamineBettingLayer.js",
+        "src/games/PokerAnimationLayer.js",
+        "src/games/SwitchSprite.js",
+        "src/games/ChangeNameLayer.js",
+        "src/games/BankerUserLayer.js",
+
+
+        "src/recharge/RechargeMessageLayer.js",
+        "src/recharge/RechargeDetailsLayer.js",
+        "src/recharge/RechargeLayer.js",
+        "src/recharge/WithDrawalsLayer.js",
+        "src/recharge/SetPassWordLayer.js",
+        "src/recharge/InputPassWordLayer.js",
+        "src/recharge/AddBankCardLayer.js",
+        "src/recharge/SelfBankLayer.js",
+        "src/recharge/EditorBankLayer.js",
+        "src/recharge/AlipayRechargeLayer.js",
+        "src/recharge/WechatRechargeLayer.js",
+        "src/games/CountDown.js",
+
+        "src/common/Md5.js"
+
+
+    ]
+}
