@@ -27,7 +27,13 @@ var HeadLayer=cc.Layer.extend({
         backBtn.setPressedActionEnabled(true);
         backBtn.addClickEventListener(function () {
             cc.audioEngine.playEffect(res.mp3_click);
-            cc.director.runScene(new cc.TransitionFade(0.5,new LobbyScene()));
+
+            var chenggong=new th.PopupLayer("您得资金将在本局结束后返还\n确定退出？","确定",function(){
+                cc.director.runScene(new cc.TransitionFade(0.5,new LobbyScene()));
+            },true);
+            cc.director.getRunningScene().addChild(chenggong,999);
+
+
         });
         this._bgSprite.addChild(backBtn);
 

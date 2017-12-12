@@ -1,7 +1,7 @@
 var th = th || {};
 
 th.PopupLayer = cc.Layer.extend({
-    ctor: function (msg,btnText,callback) {
+    ctor: function (msg,btnText,callback,isshowNobtn) {
         this._super();
         var self=this;
         cc.eventManager.addListener({
@@ -36,6 +36,21 @@ th.PopupLayer = cc.Layer.extend({
             callback();
         });
         this.addChild(yesBtn);
+
+        if(isshowNobtn){
+            var noBtn = new ccui.Button(res.png_btn_yes,res.png_btn_yes);
+            noBtn.setNormalizedPosition(0.7, 0.42);
+            yesBtn.setNormalizedPosition(0.3, 0.42);
+            noBtn.setTitleText("取消");
+            noBtn.setTitleColor(cc.color(17,28,67));
+            noBtn.setTitleFontSize(30);
+            noBtn.setPressedActionEnabled(true);
+            noBtn.addClickEventListener(function () {
+                cc.audioEngine.playEffect(res.mp3_click);
+                self.close();
+            });
+            this.addChild(noBtn);
+        }
 
 
         return true;

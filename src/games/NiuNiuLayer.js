@@ -9,6 +9,7 @@ var NiuNiuLayer=GameBaseLayer.extend({
         this._super(groupType,gameType,gameLimit,roomData);
 
 
+
         this._qianquBtn = new BettingButton(1,res.png_btn_qianqu,res.png_niuniu_win,this.showZoneDetail,1);
         this._qianquBtn.setPosition(375, 560);
         this._qianquBtn.addClickEventListener(this.bet);

@@ -5,7 +5,6 @@ var LobbyScene=cc.Scene.extend({
     _lobbyLayer:null,
     ctor:function () {
         this._super();
-
         //cc.audioEngine.setEffectsVolume(1.0);
         //cc.audioEngine.setMusicVolume(1.0);
 
